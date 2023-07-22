@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/signup_page_theme">
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="Corona Awarness App"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32dp"
+        android:textColor="#FDEB46"
+        android:textDirection="inherit"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:text=" Create New Account "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:textDirection="inherit"
+        android:textStyle="italic"
+        android:layout_marginBottom="10dp"/>
+
+
+    <EditText
+        android:layout_marginTop="50dp"
+        android:background="@drawable/signup_page_editext_backgrounds"
+        android:textColorHint="#ffffff"
+        android:id="@+id/name"
+        android:textColor="#ffffff"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:hint="  Name"
+        android:inputType="textPersonName"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/account_icon"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:background="@drawable/signup_page_editext_backgrounds"
+        android:id="@+id/email"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:hint="  Email"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/email_icon"
+        android:textSize="20dp"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:textAlignment="inherit"
+        android:background="@drawable/signup_page_editext_backgrounds"
+        android:id="@+id/phone"
+        android:textColor="#ffffff"
+        android:drawableLeft="@drawable/phone_icon"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:hint="  Phone"
+        android:textColorHint="#ffffff"
+        android:inputType="phone"
+        android:textSize="20dp"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:background="@drawable/signup_page_editext_backgrounds"
+        android:id="@+id/password"
+        android:textColorHint="#ffffff"
+        android:layout_width="290dp"
+        android:textColor="#ffffff"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:hint="  Enter Password"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/password_icon"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:background="@drawable/signup_page_editext_backgrounds"
+        android:id="@+id/repassword"
+        android:textColorHint="#ffffff"
+        android:layout_width="290dp"
+        android:layout_height="50dp"
+        android:textAlignment="textStart"
+        android:inputType="textPassword"
+        android:textColor="#ffffff"
+        android:hint="  Retype Password"
+        android:textSize="20dp"
+        android:drawableLeft="@drawable/password_icon"
+        android:layout_marginBottom="15dp"/>
+
+    <LinearLayout
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <CheckBox
+            android:id="@+id/checkbox_privacy"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:scaleX="1.3"
+            android:scaleY="1.3"
+            android:text="Accept Privacy Policy."
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <Button
+        android:background="@drawable/button_login_page_background"
+        android:layout_marginTop="40dp"
+        android:id="@+id/button"
+        android:textSize="25dp"
+        android:onClick="signup"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up" />
+
+</LinearLayout>

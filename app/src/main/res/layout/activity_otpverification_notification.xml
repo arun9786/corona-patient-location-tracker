@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Otpverification_notification"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#213CD1">
+
+    <TextView
+        android:text=""
+        android:textColor="#ffffff"
+        android:id="@+id/time_textview"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:text="Corona Awarness App \nOTP Verification:"
+        android:textColor="#ffffff"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="23dp"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/otp_number"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="23dp"/>
+
+</LinearLayout>

@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Self_Checking"
+    android:background="#EEEAEE">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/symptoms_checker_textview_question_background">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="#ffffff"
+                    android:text="What is Your Gender?"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioGroup
+                    android:id="@+id/radiogroup_selfchecking_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radiobutton_selfchecking_gender_male"
+                        android:layout_width="wrap_content"
+                        android:text="Male  "
+                        android:textStyle="bold"
+                        android:textColor="#0E2FE2"
+                        android:background="#ffffff"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/radiobutton_selfchecking_gender_female"
+                        android:layout_width="wrap_content"
+                        android:text="Female  "
+                        android:textStyle="bold"
+                        android:textColor="#0E2FE2"
+                        android:background="#ffffff"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/radiobutton_selfchecking_gender_others"
+                        android:layout_width="wrap_content"
+                        android:text="Others  "
+                        android:textStyle="bold"
+                        android:textColor="#0E2FE2"
+                        android:background="#ffffff"
+                        android:layout_height="wrap_content" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/symptoms_checker_textview_question_background">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="#ffffff"
+                    android:text="What is Your Age?"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioGroup
+                    android:id="@+id/radiogroup_selfchecking_age"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radiobutton_selfchecking_age_below20"
+                        android:layout_width="wrap_content"
+                        android:text="Below 20  "
+                        android:textStyle="bold"
+                        android:textColor="#0E2FE2"
+                        android:background="#ffffff"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/radiobutton_selfchecking_19-40_female"
+                        android:layout_width="wrap_content"
+                        android:text="21-60  "
+                        android:textStyle="bold"
+                        android:textColor="#0E2FE2"
+                        android:background="#ffffff"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/radiobutton_selfchecking_gender_morethan60"
+                        android:layout_width="wrap_content"
+                        android:text="Others  "
+                        android:textStyle="bold"
+                        android:textColor="#0E2FE2"
+                        android:background="#ffffff"
+                        android:layout_height="wrap_content" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/symptoms_checker_textview_question_background">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="#ffffff"
+                    android:text="Do you feel any of the following symptoms?"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <CheckBox
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkbox_selfchecking_cough"
+                    android:text="Cough  "
+                    android:textStyle="bold"
+                    android:textColor="#0E2FE2"
+                    android:background="#ffffff"/>
+                <CheckBox
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkbox_selfchecking_fever"
+                    android:text="Fever  "
+                    android:textStyle="bold"
+                    android:textColor="#0E2FE2"
+                    android:background="#ffffff"/>
+                <CheckBox
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/checkbox_selfchecking_sneezing"
+                    android:textColor="#0E2FE2"
+                    android:background="#ffffff"
+                    android:text="Sneezing  "/>
+                <CheckBox
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/checkbox_selfchecking_breathing"
+                    android:textColor="#0E2FE2"
+                    android:background="#ffffff"
+                    android:text="Difficulty to Breathing "/>
+                <CheckBox
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/checkbox_selfchecking_losssmell"
+                    android:textColor="#0E2FE2"
+                    android:background="#ffffff"
+                    android:text="Loss of sense of smell and taste  "/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/symptoms_checker_textview_question_background">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="#ffffff"
+                    android:text="Have you ever had the following?"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <CheckBox
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkbox_selfchecking_diabetes"
+                    android:text="Diabetes  "
+                    android:textStyle="bold"
+                    android:textColor="#0E2FE2"
+                    android:background="#ffffff"/>
+                <CheckBox
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#0E2FE2"
+                    android:background="#ffffff"
+                    android:id="@+id/checkbox_selfchecking_hypertension"
+                    android:text="Hypertension  "/>
+                <CheckBox
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#0E2FE2"
+                    android:background="#ffffff"
+                    android:id="@+id/checkbox_selfchecking_lungdisease"
+                    android:text="Lung Disease  "/>
+                <CheckBox
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#0E2FE2"
+                    android:background="#ffffff"
+                    android:id="@+id/checkbox_selfchecking_heartdisease"
+                    android:text="Heart Disease  "/>
+                <CheckBox
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="#0E2FE2"
+                    android:background="#ffffff"
+                    android:id="@+id/checkbox_selfchecking_kidneydisorder"
+                    android:text="Kidney Disorder  "/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/symptoms_checker_textview_question_background">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="#ffffff"
+                    android:text="Have you traveled anywhere internationally in the last 15-45 days?"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioGroup
+                    android:id="@+id/radiogroup_selfchecking_travelling"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radiobutton_selfchecking_travelling_yes"
+                        android:layout_width="wrap_content"
+                        android:text="Yes  "
+                        android:textStyle="bold"
+                        android:textColor="#0E2FE2"
+                        android:background="#ffffff"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:layout_marginLeft="20dp"
+                        android:id="@+id/radiobutton_selfchecking_travelling_no"
+                        android:layout_width="wrap_content"
+                        android:text="No  "
+                        android:textStyle="bold"
+                        android:textColor="#0E2FE2"
+                        android:background="#ffffff"
+                        android:layout_height="wrap_content" />
+                </RadioGroup>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/symptoms_checker_textview_question_background">
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="18dp"
+                    android:textColor="#ffffff"
+                    android:text="Which of the following apply to you?"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <CheckBox
+                    android:layout_marginTop="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/checkbox_selfchecking_interactwith_covidpatient"
+                    android:text="I have recently interacted or live with someone who has tested positive for COVID-19 "
+                    android:textStyle="bold"
+                    android:textColor="#0E2FE2"
+                    android:background="#ffffff"/>
+                <CheckBox
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:id="@+id/checkbox_selfchecking_healthcare_worker"
+                    android:textColor="#0E2FE2"
+                    android:background="#ffffff"
+                    android:text="I am a healthcare worker and I examined a COVID-19 confirmed case without protective gear  "/>
+            </LinearLayout>
+
+
+             <LinearLayout
+                 android:layout_marginTop="10dp"
+                 android:layout_marginLeft="15dp"
+                 android:layout_marginRight="15dp"
+                 android:layout_width="fill_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="center">
+                 <Button
+                     android:layout_marginBottom="5dp"
+                     android:id="@+id/check"
+                     android:layout_width="250dp"
+                     android:layout_height="wrap_content"
+                     android:text="Check"
+                     android:textStyle="bold"
+                     android:textSize="25dp"
+                     android:background="@drawable/button_login_page_background"
+                     android:onClick="Check"/>
+             </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/linearlayout_selfchecking_textview"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <TextView
+                    android:textSize="17dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/textview_selfchecking_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#ffffff"
+                    android:onClick="Check"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</ScrollView>
